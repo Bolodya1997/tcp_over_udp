@@ -19,7 +19,7 @@ struct head {
 class protocol {
 public:
     static const size_t HEAD_SIZE = sizeof(head);
-    static const size_t MAX_DATA_SIZE = 64;
+    static const size_t MAX_DATA_SIZE = 1024 * 10;
     static const size_t MAX_MESSAGE_SIZE = HEAD_SIZE + MAX_DATA_SIZE;
 
     static const unsigned int MAX_WINDOW_SIZE = 15;

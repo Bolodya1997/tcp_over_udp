@@ -55,7 +55,7 @@ void activate_socket(char **argv){
 
         server_socket->accept();	//	TODO: connect
 
-	} catch (net_exception) {
+	} catch (std::exception) {
         error("d_socket", -1);
     }
 

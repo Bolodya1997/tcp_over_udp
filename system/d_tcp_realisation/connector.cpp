@@ -33,5 +33,4 @@ void connector::update(head *message) {
         else
             throw (system_exception());
     }
-
 }
